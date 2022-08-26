@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 520;
+    font-size: 24px;
+    color: rgb(228, 228, 228);
+}
+
+
+.container{
+    position: relative;
+    margin-top: 100px;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(63, 61, 86, 1), rgba(63, 61, 86, 1))
+}
+
+.icon{
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+
+.text{
+    position: absolute;
+    bottom: 100px;
+}
+
+
+.text::selection{
+    color: white;
+    background-color: rgba(252, 180, 149, 0.93);
+}

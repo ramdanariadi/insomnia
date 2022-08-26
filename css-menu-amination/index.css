@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    font-weight: 600;
+    color: rgb(37, 35, 35);
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    height: 40px;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: aliceblue;
+    padding: 3px;
+}
+
+.menu-item {
+    display: inline;
+    margin: 10px;
+    padding: 14px;
+    z-index: 101;
+}
+
+.menu-item:hover{
+    cursor: pointer;
+}
+
+
+.highlight{
+    background-color: rgb(73, 153, 153);
+    border-radius: 8px;
+    height: 45px;
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    left: 3px;
+    color: rgb(37, 35, 35);
+    transition: all .5s ease-in-out 0s;
+}
+
+.technology:hover ~ .highlight{
+    left: 105px;
+}
+
+.sport:hover ~ .highlight{
+    left: 215px;
+}
+
+.health:hover ~ .highlight{
+    left: 305px;
+}
+
+.economy:hover ~ .highlight{
+    left: 410px;
+}
